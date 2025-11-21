@@ -3,10 +3,10 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   server: {
     host: true,
-    allowedHosts: ['.netlify.app']
+    allowedHosts: ['all']
   },
   preview: {
     host: true,
-    allowedHosts: ['.netlify.app']
+    allowedHosts: ['all']
   }
 })
