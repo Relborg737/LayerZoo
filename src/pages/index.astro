@@ -5,61 +5,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LayerZoo • Bitcoin Honey Badger Genesis</title>
-  <meta name="description" content="2100 free Bitcoin Honey Badger NFTs on Stacks. Promoting Bitcoin & L2s." />
-  <link rel="icon" href="/favicon.svg" />
+  <title>LayerZoo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-black text-white min-h-screen">
-  <main class="max-w-4xl mx-auto px-6 py-16 text-center">
-    <h1 class="text-8xl font-display text-orange font-black mb-4">LAYERZOO</h1>
-    <p class="text-xl text-gray-400 mb-12">Bitcoin Honey Badger Genesis • 2100 free NFTs on Stacks</p>
+<body class="bg-gray-900 text-white font-sans">
+  <nav class="bg-black/50 backdrop-blur-md fixed w-full z-10 py-4">
+    <ul class="flex justify-center space-x-8">
+      <li><a href="#home" class="text-orange-500 hover:text-white">Home</a></li>
+      <li><a href="#zoo" class="text-gray-300 hover:text-orange-500">The Zoo</a></li>
+      <li><a href="#blueprint" class="text-gray-300 hover:text-orange-500">The Blueprint</a></li>
+    </ul>
+  </nav>
 
-    <img src="/badger-hero.png" alt="Honey Badger" class="mx-auto w-full max-w-xl rounded-2xl border-4 border-orange shadow-2xl mb-12" />
+  <main class="pt-20">
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+      <img src="https://placehold.co/600x400/orange/white?text=Hero+Image" alt="Hero" class="w-full max-w-md rounded-lg mb-8" />
+      <h1 class="text-5xl font-bold text-orange-500 mb-4">Honey Badger Don't Care</h1>
+    </section>
 
-    <h2 class="text-5xl font-display text-orange mb-8">2100 BADGERS • FREE • EARNED ONLY</h2>
-    <p class="text-2xl leading-relaxed mb-12">
-      Honey Badger don't care.<br />
-      2100 Genesis dropping soon. No presale. No price.<br />
-      Just proof of contribution to Bitcoin & its Layer 2s.
-    </p>
+    <!-- Zoo Section -->
+    <section id="zoo" class="py-20 px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">The Zoo</h2>
+      <div class="carousel flex overflow-x-auto space-x-6 pb-4 snap-x snap-mandatory scrollbar-hide">
+        <!-- Bitcoin Series -->
+        <div class="snap-center flex-shrink-0 w-64 bg-white/10 backdrop-blur rounded-lg p-4 text-center cursor-pointer hover:bg-white/20 transition">
+          <img src="https://placehold.co/200x200/orange/white?text=Bitcoin" alt="Bitcoin Series" class="w-full rounded mb-4" />
+          <h3 class="text-xl font-bold">Bitcoin Series</h3>
+          <p class="text-gray-400">Honey Badger</p>
+        </div>
+        <!-- Placeholders for L2s -->
+        <div class="snap-center flex-shrink-0 w-64 bg-white/5 backdrop-blur rounded-lg p-4 text-center opacity-50">
+          <img src="https://placehold.co/200x200/yellow/white?text=Lightning" alt="Lightning" class="w-full rounded mb-4" />
+          <h3 class="text-xl">Lightning Series</h3>
+          <p>Coming Soon</p>
+        </div>
+        <div class="snap-center flex-shrink-0 w-64 bg-white/5 backdrop-blur rounded-lg p-4 text-center opacity-50">
+          <img src="https://placehold.co/200x200/purple/white?text=Stacks" alt="Stacks" class="w-full rounded mb-4" />
+          <h3 class="text-xl">Stacks Series</h3>
+          <p>Coming Soon</p>
+        </div>
+        <div class="snap-center flex-shrink-0 w-64 bg-white/5 backdrop-blur rounded-lg p-4 text-center opacity-50">
+          <img src="https://placehold.co/200x200/blue/white?text=Ark" alt="Ark" class="w-full rounded mb-4" />
+          <h3 class="text-xl">Ark Series</h3>
+          <p>Coming Soon</p>
+        </div>
+        <div class="snap-center flex-shrink-0 w-64 bg-white/5 backdrop-blur rounded-lg p-4 text-center opacity-50">
+          <img src="https://placehold.co/200x200/green/white?text=Spark" alt="Spark" class="w-full rounded mb-4" />
+          <h3 class="text-xl">Spark Series</h3>
+          <p>Coming Soon</p>
+        </div>
+      </div>
+    </section>
 
-    <div id="countdown" class="grid grid-cols-4 gap-6 max-w-2xl mx-auto mb-12 text-4xl"></div>
-
-    <div class="space-x-6">
-      <a href="https://t.me/BitcoinL2Crew" target="_blank" class="inline-block bg-orange text-black px-10 py-5 rounded-xl font-bold text-xl hover:bg-orange/90 transition">
-        Join the Pack
-      </a>
-      <a href="#" class="inline-block border-2 border-orange text-orange px-10 py-5 rounded-xl font-bold text-xl hover:bg-orange hover:text-black transition">
-        Allowlist Form →
-      </a>
-    </div>
-
-    <footer class="mt-24 text-gray-500">
-      Open-source • <a href="https://github.com/Relborg737/LayerZoo" target="_blank" class="text-orange underline">GitHub</a>
-    </footer>
+    <!-- Blueprint Section -->
+    <section id="blueprint" class="py-20 px-4 bg-black/20">
+      <h2 class="text-4xl font-bold text-center mb-12">The Blueprint</h2>
+      <div class="max-w-4xl mx-auto space-y-8">
+        <div class="bg-white/10 backdrop-blur rounded-lg p-6">
+          <h3 class="text-2xl font-bold mb-4">Glossary of Terms</h3>
+          <p class="text-gray-300 mb-4">Decode key Bitcoin and L2 concepts, from beginner to degen.</p>
+          <a href="/blueprint/glossary" class="text-orange-500 hover:underline">Read More</a>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-lg p-6">
+          <h3 class="text-2xl font-bold mb-4">Onboarding Basics</h3>
+          <p class="text-gray-300 mb-4">Quick guide to cryptocurrency and blockchain for newcomers.</p>
+          <a href="/blueprint/basics" class="text-orange-500 hover:underline">Read More</a>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-lg p-6">
+          <h3 class="text-2xl font-bold mb-4">Self Custody Guide</h3>
+          <p class="text-gray-300 mb-4">Own your keys: CEXs, DEXs, and secure wallets explained.</p>
+          <a href="/blueprint/self-custody" class="text-orange-500 hover:underline">Read More</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script>
-    const drop = new Date("2025-04-01T00:00:00").getTime();
-    const countdown = document.getElementById("countdown");
-    const timer = setInterval(() => {
-      const distance = drop - Date.now();
-      if (distance < 0) { 
-        countdown.innerHTML = "<div class='col-span-4 text-5xl text-orange'>LIVE</div>"; 
-        clearInterval(timer); 
-        return; 
-      }
-      const days = Math.floor(distance / 86400000).toString().padStart(2, '0');
-      const hours = Math.floor((distance % 86400000) / 3600000).toString().padStart(2, '0');
-      const mins = Math.floor((distance % 3600000) / 60000).toString().padStart(2, '0');
-      const secs = Math.floor((distance % 60000) / 1000).toString().padStart(2, '0');
-      countdown.innerHTML = `
-        <div class="bg-gray-900 rounded-xl py-6"><span class="block text-6xl">${days}</span>Days</div>
-        <div class="bg-gray-900 rounded-xl py-6"><span class="block text-6xl">${hours}</span>Hours</div>
-        <div class="bg-gray-900 rounded-xl py-6"><span class="block text-6xl">${mins}</span>Mins</div>
-        <div class="bg-gray-900 rounded-xl py-6"><span class="block text-6xl">${secs}</span>Secs</div>
-      `;
-    }, 1000);
-  </script>
+  <style>
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-bold { font-weight: 700; }
+    .text-orange-500 { color: #f97316; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+  </style>
 </body>
 </html>
