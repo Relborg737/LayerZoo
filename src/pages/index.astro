@@ -1,12 +1,11 @@
 ---
-// LayerZoo • Bitcoin 
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LayerZoo • Share, Earn & Learn about Bitcoin and Bitcoin Layer2</title>
+  <title>LayerZoo • Bitcoin Honey Badger Genesis</title>
   <meta name="description" content="2100 free Bitcoin Honey Badger NFTs on Stacks. Promoting Bitcoin & L2s." />
   <link rel="icon" href="/favicon.svg" />
 </head>
@@ -19,7 +18,7 @@
 
     <h2 class="text-5xl font-display text-orange mb-8">2100 BADGERS • FREE • EARNED ONLY</h2>
     <p class="text-2xl leading-relaxed mb-12">
-      Honey Badger don’t care.<br />
+      Honey Badger don't care.<br />
       2100 Genesis dropping soon. No presale. No price.<br />
       Just proof of contribution to Bitcoin & its Layer 2s.
     </p>
@@ -45,7 +44,11 @@
     const countdown = document.getElementById("countdown");
     const timer = setInterval(() => {
       const distance = drop - Date.now();
-      if (distance < 0) { countdown.innerHTML = "<div class='col-span-4 text-5xl text-orange'>LIVE</div>"; clearInterval(timer); return; }
+      if (distance < 0) { 
+        countdown.innerHTML = "<div class='col-span-4 text-5xl text-orange'>LIVE</div>"; 
+        clearInterval(timer); 
+        return; 
+      }
       const days = Math.floor(distance / 86400000).toString().padStart(2, '0');
       const hours = Math.floor((distance % 86400000) / 3600000).toString().padStart(2, '0');
       const mins = Math.floor((distance % 3600000) / 60000).toString().padStart(2, '0');
