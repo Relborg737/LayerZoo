@@ -1,0 +1,17 @@
+[build]
+  publish = "dist"
+  command = "astro build"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
+[dev]
+  framework = "astro"
+  port = 3000
+  host = "0.0.0.0"
+
+[functions]
+  directory = "netlify/functions"
