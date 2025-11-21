@@ -2,9 +2,11 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   server: {
-    allowedHosts: ['devserver-preview--layerzoo.netlify.app']
+    host: true,
+    allowedHosts: ['.netlify.app']
   },
   preview: {
-    allowedHosts: ['devserver-preview--layerzoo.netlify.app']
+    host: true,
+    allowedHosts: ['.netlify.app']
   }
 })
